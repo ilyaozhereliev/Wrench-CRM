@@ -30,6 +30,8 @@ module.exports = {
     'simple-import-sort/imports': 'warn',
     'simple-import-sort/exports': 'warn',
     'linebreak-style': 0,
+    'react-hooks/exhaustive-deps': 'off',
+    'react/jsx-one-expression-per-line': 'off',
 
     'no-param-reassign': ['error', { props: false }],
     'no-console': [

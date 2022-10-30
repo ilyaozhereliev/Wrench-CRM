@@ -5,10 +5,16 @@ import { token } from '../../../../env';
 import { Search } from '../Search';
 import styles from './Adresses.module.scss';
 
-// interface Adress {}
+interface Adress {
+  value: string;
+  data: {
+    geoname_id: string;
+    fias_id: string;
+  };
+}
 
 const Adresses = () => {
-  const [adresses, setAdress] = useState<any[]>([]);
+  const [adresses, setAdress] = useState<Adress[]>([]);
   const [search, setSearch] = useState('');
 
   const getAdress = async () => {
@@ -36,7 +42,6 @@ const Adresses = () => {
     } else {
       setAdress([]);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [search]);
 
   return (
@@ -47,7 +52,7 @@ const Adresses = () => {
           <h1>Адреса</h1>
           {adresses.map((adress) => (
             <li
-              key={adress.geoname_id}
+              key={adress.data.geoname_id + adress.data.fias_id}
               className={styles.items}
               onClick={() => setSearch(adress.value)}
             >
