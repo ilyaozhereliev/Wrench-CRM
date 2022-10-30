@@ -32,7 +32,7 @@ module.exports = {
     'linebreak-style': 0,
     'react-hooks/exhaustive-deps': 'off',
     'react/jsx-one-expression-per-line': 'off',
-    'linebreak-style': 'off',
+    'linebreak-style': ['error', 'windows'],
     'no-param-reassign': ['error', { props: false }],
     'no-console': [
       'warn',
