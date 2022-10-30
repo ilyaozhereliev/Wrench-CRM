@@ -10,25 +10,27 @@ interface SearchProps {
 }
 
 const Search: FC<SearchProps> = ({ search, setSearch, getAdress }) => {
-  const searchAdress = (e: React.MouseEvent<HTMLElement>) => {
+  const searchAdress = (e: React.FormEvent<HTMLElement>) => {
     e.preventDefault();
-    getAdress(search);
+    if (search.length > 2) {
+      getAdress(search);
+    }
   };
 
   return (
     <div className={styles.content}>
-      <div className={styles.search}>
+      <form onSubmit={searchAdress} className={styles.search}>
         <input
           type="text"
           placeholder="Введите интересующий вас адрес"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
-        <button type="button" onClick={searchAdress}>
+        <button type="submit">
           <img src={search_icon} alt="search" />
           Поиск
         </button>
-      </div>
+      </form>
     </div>
   );
 };

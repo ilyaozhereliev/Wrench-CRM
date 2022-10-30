@@ -2,7 +2,7 @@ import cn from 'classnames';
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 
-import sb_dropdown from '../../../assets/icons/sb_dropdown.svg';
+import dropdown from '../../../assets/icons/sb_dropdown.svg';
 import { sideBarData } from '../../../data/sidebarData';
 import { subsettingsData } from '../../../data/subsettingsData';
 import styles from './Sidebar.module.scss';
@@ -11,7 +11,7 @@ const Sidebar = () => {
   const [subsettingsIsOpen, setSubsettingsIsOpen] = useState(false);
   const { pathname } = useLocation();
 
-  const changeSubsettingsVisible = (type: string) => {
+  const changeSubsettingsVisible = (type: string) => () => {
     if (type === 'dropdown') {
       setSubsettingsIsOpen(!subsettingsIsOpen);
     }
@@ -22,12 +22,7 @@ const Sidebar = () => {
       <div className={styles.sidebar}>
         <div className={styles.title}>Меню</div>
         {sideBarData.map((item) => (
-          <ul
-            key={item.index}
-            onClick={() => {
-              changeSubsettingsVisible(item.type);
-            }}
-          >
+          <ul key={item.index} onClick={changeSubsettingsVisible(item.type)}>
             {item.path ? (
               <NavLink
                 className={cn(
@@ -49,7 +44,6 @@ const Sidebar = () => {
                 )}
               </NavLink>
             ) : (
-              // </div>
               <li className={styles.sidebar__item}>
                 <div className={styles.sidebar__item_content}>
                   <img
@@ -62,14 +56,14 @@ const Sidebar = () => {
                 {!subsettingsIsOpen && item.type === 'dropdown' && (
                   <img
                     className={styles.dropdown}
-                    src={sb_dropdown}
+                    src={dropdown}
                     alt="dropdowns"
                   />
                 )}
                 {subsettingsIsOpen && item.type === 'dropdown' && (
                   <img
                     className={cn(styles.dropdown, styles.dropdown_active)}
-                    src={sb_dropdown}
+                    src={dropdown}
                     alt="dropdowns"
                   />
                 )}

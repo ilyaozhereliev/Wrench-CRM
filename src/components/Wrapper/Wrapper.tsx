@@ -1,7 +1,6 @@
 import React, { FC, ReactNode } from 'react';
 
 import { Header } from './Header';
-import { PageContent } from './PageContent';
 import { Sidebar } from './Sidebar';
 import styles from './Wrapper.module.scss';
 
@@ -27,7 +26,7 @@ const Wrapper: FC<WrapperProps> = ({ children, pageName, pageDescription }) => (
           <h1 className={styles.page__name}>{pageName}</h1>
           <h2 className={styles.page__description}>{pageDescription}</h2>
         </div>
-        <PageContent>{children}</PageContent>
+        <div>{children}</div>
       </div>
     </main>
   </div>
