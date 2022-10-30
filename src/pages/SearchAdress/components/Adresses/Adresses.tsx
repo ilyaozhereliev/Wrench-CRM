@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
+import { token } from '../../../../env';
 import { Search } from '../Search';
 import styles from './Adresses.module.scss';
 
@@ -16,7 +17,7 @@ const Adresses = () => {
         'https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/address',
         {
           headers: {
-            Authorization: 'Token 40577cf16aaed08253566aaccfc29dd4200b80f0',
+            Authorization: `Token ${token}`,
           },
           params: {
             query: search,
@@ -35,6 +36,7 @@ const Adresses = () => {
     } else {
       setAdress([]);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [search]);
 
   return (

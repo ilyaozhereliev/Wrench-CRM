@@ -36,21 +36,29 @@ const Sidebar = () => {
                 )}
                 to={item.path}
               >
-                <img
-                  className={styles.sb_icon}
-                  src={item.icon}
-                  alt={item.title}
-                />
-                <span>{item.title}</span>
+                <div className={styles.sidebar__item_content}>
+                  <img
+                    className={styles.sb_icon}
+                    src={item.icon}
+                    alt={item.title}
+                  />
+                  <span>{item.title}</span>
+                </div>
+                {item.path === pathname && (
+                  <div className={styles.border__active} />
+                )}
               </NavLink>
             ) : (
+              // </div>
               <li className={styles.sidebar__item}>
-                <img
-                  className={styles.sb_icon}
-                  src={item.icon}
-                  alt={item.title}
-                />
-                <span>{item.title}</span>
+                <div className={styles.sidebar__item_content}>
+                  <img
+                    className={styles.sb_icon}
+                    src={item.icon}
+                    alt={item.title}
+                  />
+                  <span>{item.title}</span>
+                </div>
                 {!subsettingsIsOpen && item.type === 'dropdown' && (
                   <img
                     className={styles.dropdown}
@@ -60,7 +68,7 @@ const Sidebar = () => {
                 )}
                 {subsettingsIsOpen && item.type === 'dropdown' && (
                   <img
-                    className={styles.dropdown_active}
+                    className={cn(styles.dropdown, styles.dropdown_active)}
                     src={sb_dropdown}
                     alt="dropdowns"
                   />

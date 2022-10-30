@@ -30,7 +30,7 @@
 
   font-weight: 500;
   font-size: 20px;
-  color: #1c1c1e;
+  color: $color__black_10;
 
   padding-left: 24px;
 
@@ -43,12 +43,12 @@
   width: 217px;
   height: 70px;
 
-  margin-left: 24px;
-  border: none;
-
   display: flex;
   justify-content: center;
   align-items: center;
+
+  margin-left: 24px;
+  border: none;
 
   font-weight: 700;
   font-size: 26px;
@@ -58,7 +58,6 @@
   border-radius: 10px;
 
   @include for-tablet-portrait-up {
-    zoom: 0.6;
     display: none;
   }
 }
