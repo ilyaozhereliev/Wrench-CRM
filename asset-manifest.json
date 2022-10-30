@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/wrench-crm/static/css/main.c98f3d72.css",
-    "main.js": "/wrench-crm/static/js/main.e462ef76.js",
-    "static/media/sb_settings.svg": "/wrench-crm/static/media/sb_settings.5f34416c13daeeb8ee88249b200d9df9.svg",
-    "static/media/sb_tables.svg": "/wrench-crm/static/media/sb_tables.402c784bea251e7c98642f1c7e2d4122.svg",
-    "static/media/sb_finance.svg": "/wrench-crm/static/media/sb_finance.2c816d683e839613161ea4c6673cd1bd.svg",
-    "static/media/sb_exit.svg": "/wrench-crm/static/media/sb_exit.e753b4570f4150d0049d7be2b422fe52.svg",
-    "static/media/sb_search.svg": "/wrench-crm/static/media/sb_search.d8347e497c563b76dd9bc26547780f54.svg",
-    "static/media/search_icon.svg": "/wrench-crm/static/media/search_icon.3f7818f3d64d579c54611ea178fbbc23.svg",
-    "index.html": "/wrench-crm/index.html",
-    "static/media/profileLogo.svg": "/wrench-crm/static/media/profileLogo.b085495dfa72b87d3fec7ec7ff9ea549.svg",
-    "static/media/sb_main.svg": "/wrench-crm/static/media/sb_main.64ec2f263da2e80f21192bf4806923bb.svg",
-    "static/media/sb_profile.svg": "/wrench-crm/static/media/sb_profile.7d428781cda3acc22d73d083ef30c246.svg",
-    "static/media/sb_maps.svg": "/wrench-crm/static/media/sb_maps.7703ccf1efdc3a29d340baa5b5d8ae0f.svg",
-    "static/media/logo.svg": "/wrench-crm/static/media/logo.6693014964598003db3fbd021ae1d766.svg",
-    "static/media/sb_calendar.svg": "/wrench-crm/static/media/sb_calendar.b438cff0dd507044c3994ce268576c9b.svg",
-    "static/media/sb_vidgets.svg": "/wrench-crm/static/media/sb_vidgets.c9299d23c7ec2b0c14b0320a9324fc92.svg",
-    "static/media/sb_dropdown.svg": "/wrench-crm/static/media/sb_dropdown.fe04bfe848e3ad61738b4d14a746797d.svg",
-    "main.c98f3d72.css.map": "/wrench-crm/static/css/main.c98f3d72.css.map",
-    "main.e462ef76.js.map": "/wrench-crm/static/js/main.e462ef76.js.map"
+    "main.css": "/ilyaozhereliev/wrench-crm/static/css/main.c98f3d72.css",
+    "main.js": "/ilyaozhereliev/wrench-crm/static/js/main.7b8a48ba.js",
+    "static/media/sb_settings.svg": "/ilyaozhereliev/wrench-crm/static/media/sb_settings.5f34416c13daeeb8ee88249b200d9df9.svg",
+    "static/media/sb_tables.svg": "/ilyaozhereliev/wrench-crm/static/media/sb_tables.402c784bea251e7c98642f1c7e2d4122.svg",
+    "static/media/sb_finance.svg": "/ilyaozhereliev/wrench-crm/static/media/sb_finance.2c816d683e839613161ea4c6673cd1bd.svg",
+    "static/media/sb_exit.svg": "/ilyaozhereliev/wrench-crm/static/media/sb_exit.e753b4570f4150d0049d7be2b422fe52.svg",
+    "static/media/sb_search.svg": "/ilyaozhereliev/wrench-crm/static/media/sb_search.d8347e497c563b76dd9bc26547780f54.svg",
+    "static/media/search_icon.svg": "/ilyaozhereliev/wrench-crm/static/media/search_icon.3f7818f3d64d579c54611ea178fbbc23.svg",
+    "index.html": "/ilyaozhereliev/wrench-crm/index.html",
+    "static/media/profileLogo.svg": "/ilyaozhereliev/wrench-crm/static/media/profileLogo.b085495dfa72b87d3fec7ec7ff9ea549.svg",
+    "static/media/sb_main.svg": "/ilyaozhereliev/wrench-crm/static/media/sb_main.64ec2f263da2e80f21192bf4806923bb.svg",
+    "static/media/sb_profile.svg": "/ilyaozhereliev/wrench-crm/static/media/sb_profile.7d428781cda3acc22d73d083ef30c246.svg",
+    "static/media/sb_maps.svg": "/ilyaozhereliev/wrench-crm/static/media/sb_maps.7703ccf1efdc3a29d340baa5b5d8ae0f.svg",
+    "static/media/logo.svg": "/ilyaozhereliev/wrench-crm/static/media/logo.6693014964598003db3fbd021ae1d766.svg",
+    "static/media/sb_calendar.svg": "/ilyaozhereliev/wrench-crm/static/media/sb_calendar.b438cff0dd507044c3994ce268576c9b.svg",
+    "static/media/sb_vidgets.svg": "/ilyaozhereliev/wrench-crm/static/media/sb_vidgets.c9299d23c7ec2b0c14b0320a9324fc92.svg",
+    "static/media/sb_dropdown.svg": "/ilyaozhereliev/wrench-crm/static/media/sb_dropdown.fe04bfe848e3ad61738b4d14a746797d.svg",
+    "main.c98f3d72.css.map": "/ilyaozhereliev/wrench-crm/static/css/main.c98f3d72.css.map",
+    "main.7b8a48ba.js.map": "/ilyaozhereliev/wrench-crm/static/js/main.7b8a48ba.js.map"
   },
   "entrypoints": [
     "static/css/main.c98f3d72.css",
-    "static/js/main.e462ef76.js"
+    "static/js/main.7b8a48ba.js"
   ]
 }
