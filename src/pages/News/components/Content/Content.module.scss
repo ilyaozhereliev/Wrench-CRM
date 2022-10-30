@@ -1,0 +1,32 @@
+@use '../../../../assets/styles/constants.scss' as *;
+@import '../../../../assets/styles/breakpoints.scss';
+
+.content {
+  font-weight: 500;
+  font-size: 20px;
+
+  @include for-desktop-small {
+    zoom: 0.8;
+  }
+
+  @include for-tablet-landscape-up {
+    zoom: 0.7;
+  }
+  @include for-tablet-portrait-up {
+    zoom: 0.6;
+  }
+  @include semi-phone {
+    zoom: 0.5;
+  }
+  @include for-phone-only {
+    zoom: 0.4;
+  }
+}
+
+.content p {
+  margin-bottom: 1.5em;
+}
+
+.content a:hover {
+  color: rgb(190, 70, 70);
+}

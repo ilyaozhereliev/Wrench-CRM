@@ -1,0 +1,49 @@
+@use '../../../assets/styles/constants.scss' as *;
+@import '../../../assets/styles/breakpoints.scss';
+.header {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: $color__purple;
+  color: $color__white;
+}
+
+.header_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0px 32px 0px 32px;
+
+  font-weight: 700;
+  font-size: 20px;
+
+  gap: 16px;
+
+  @include for-desktop-small {
+    zoom: 0.8;
+  }
+
+  @include for-tablet-landscape-up {
+    zoom: 0.7;
+  }
+
+  @include semi-phone {
+    zoom: 0.5;
+  }
+  @include for-phone-only {
+    zoom: 0.4;
+  }
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+}
+
+.profile_logo {
+  width: 48px;
+  height: 48px;
+}

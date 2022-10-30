@@ -1,0 +1,150 @@
+@use '../../../assets/styles/constants.scss' as *;
+@import '../../../assets/styles/breakpoints.scss';
+
+.sidebar {
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  color: #1c1c1e;
+  background-color: $color__white;
+
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  @include for-desktop-small {
+    width: 250px;
+  }
+
+  @include for-tablet-landscape-up {
+    width: 200px;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 20px;
+
+  margin-top: 24px;
+  margin-left: 32px;
+  margin-bottom: 48px;
+
+  @include for-desktop-small {
+    zoom: 0.8;
+  }
+
+  @include for-tablet-landscape-up {
+    zoom: 0.7;
+  }
+  @include for-tablet-portrait-up {
+    zoom: 0.6;
+  }
+  @include semi-phone {
+    zoom: 0.5;
+  }
+  @include for-phone-only {
+    zoom: 0.4;
+  }
+}
+
+.sidebar a {
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+
+  color: #1c1c1e;
+
+  transition: 0.2s all ease;
+}
+
+.sidebar__item {
+  display: flex;
+
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+
+  list-style: none;
+
+  transition: 0.1s all ease;
+
+  margin-bottom: 48px;
+  margin-left: 32px;
+
+  @include for-desktop-small {
+    zoom: 0.8;
+  }
+
+  @include for-tablet-landscape-up {
+    zoom: 0.7;
+  }
+  @include for-tablet-portrait-up {
+    zoom: 0.6;
+  }
+  @include semi-phone {
+    zoom: 0.5;
+  }
+  @include for-phone-only {
+    zoom: 0.4;
+  }
+}
+
+.sidebar__item:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.sidebar__item_active {
+  display: flex;
+
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  pointer-events: none;
+  list-style: none;
+
+  margin-bottom: 48px;
+  margin-left: 32px;
+
+  position: relative;
+
+  border-right: 6px solid $color__purple;
+  border-radius: 5px;
+}
+
+.dropdown {
+  width: 15px;
+  height: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+  transform: rotate(180deg);
+}
+
+.dropdown_active {
+  width: 15px;
+  height: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.subsettings {
+  margin-left: 48px;
+  list-style: none;
+}
+
+.sb_icon {
+  width: 32px;
+  height: 32px;
+
+  margin-right: 16px;
+}
