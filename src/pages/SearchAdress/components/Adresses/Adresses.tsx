@@ -5,10 +5,10 @@ import { token } from '../../../../env';
 import { Search } from '../Search';
 import styles from './Adresses.module.scss';
 
+// interface Adress {}
+
 const Adresses = () => {
   const [adresses, setAdress] = useState<any[]>([]);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [error, setError] = useState(false);
   const [search, setSearch] = useState('');
 
   const getAdress = async () => {
@@ -26,7 +26,7 @@ const Adresses = () => {
       );
       setAdress(response.data.suggestions);
     } catch (e) {
-      setError(true);
+      console.error(e);
     }
   };
 
@@ -47,6 +47,7 @@ const Adresses = () => {
           <h1>Адреса</h1>
           {adresses.map((adress) => (
             <li
+              key={adress.geoname_id}
               className={styles.items}
               onClick={() => setSearch(adress.value)}
             >
